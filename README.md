@@ -33,7 +33,8 @@ If you find these tutorials helpful, consider supporting the project in the foll
 
 Subscribe to the Codingwith Dill YouTube channel for more React Native tutorials:
 
-![Codingwith Dill(https://www.youtube.com/channel/UCn9EJ8TFwJsD8iAIISCUVmw?sub_confirmation=1)](https://yt3.googleusercontent.com/9CiF9SpaPVDkHlmcdJMO3ZvRI10FIwkgqgDbBTpMbSEIYJwRmno3FANfrV4LfIU61olmo4R2=s160-c-k-c0x00ffffff-no-rj)
+[![Codingwith Dill](https://yt3.googleusercontent.com/9CiF9SpaPVDkHlmcdJMO3ZvRI10FIwkgqgDbBTpMbSEIYJwRmno3FANfrV4LfIU61olmo4R2=s160-c-k-c0x00ffffff-no-rj)](https://www.youtube.com/channel/UCn9EJ8TFwJsD8iAIISCUVmw?sub_confirmation=1)
+
 
 
 ## 📱 Connect on Social Media
