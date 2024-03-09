@@ -9,12 +9,9 @@ interface DataHorizontalListProps {
 
 const DataHorizontalList = ({headerTitle, data}: DataHorizontalListProps) => {
   return (
-    <View style={{width: '100%', gap: 20, paddingHorizontal: 20}}>
+    <View style={styles.container}>
       <View>
-        <Text
-          style={{fontSize: 18, color: COLORS.White, fontFamily: Fonts.Bold}}>
-          {headerTitle}
-        </Text>
+        <Text style={styles.headerTitleTxt}>{headerTitle}</Text>
       </View>
       <FlatList
         data={data}
@@ -22,22 +19,11 @@ const DataHorizontalList = ({headerTitle, data}: DataHorizontalListProps) => {
         showsHorizontalScrollIndicator={false}
         keyExtractor={item => item.id.toString()}
         renderItem={({item}) => (
-          <View style={{width: 140, paddingHorizontal: 5, gap: 10}}>
-            <Image
-              source={item.poster}
-              style={{width: '100%', height: 150, resizeMode: 'stretch'}}
-            />
-            <Text
-              style={{
-                fontSize: 16,
-                color: COLORS.White,
-                fontFamily: Fonts.Regular,
-              }}>
-              {item.name}
-            </Text>
+          <View style={styles.itemContainer}>
+            <Image source={item.poster} style={styles.itemImg} />
+            <Text style={styles.itemTitleTxt}>{item.name}</Text>
           </View>
         )}
-        ItemSeparatorComponent={() => <View style={{width: 10}} />}
       />
     </View>
   );
@@ -45,4 +31,30 @@ const DataHorizontalList = ({headerTitle, data}: DataHorizontalListProps) => {
 
 export {DataHorizontalList};
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    width: '100%',
+    gap: 20,
+    paddingHorizontal: 20,
+  },
+  headerTitleTxt: {
+    fontSize: 18,
+    color: COLORS.White,
+    fontFamily: Fonts.Bold,
+  },
+  itemContainer: {
+    width: 140,
+    paddingHorizontal: 5,
+    gap: 10,
+  },
+  itemImg: {
+    width: '100%',
+    height: 150,
+    resizeMode: 'stretch',
+  },
+  itemTitleTxt: {
+    fontSize: 16,
+    color: COLORS.White,
+    fontFamily: Fonts.Regular,
+  },
+});

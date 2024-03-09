@@ -16,7 +16,7 @@ const TrendingPodcasts = [
   },
 ];
 
-const CelebrityFavourites = [
+const CelebrityFavorites = [
   {
     id: 1,
     name: "Conan O'Brien Needs A Friend",
@@ -29,7 +29,7 @@ const CelebrityFavourites = [
   },
   {
     id: 3,
-    name: 'Armchair Expert',
+    name: 'Arm chair Expert',
     poster: require('../assets/images/posters/celeb3.png'),
   },
 ];
@@ -52,4 +52,4 @@ const ForYou = [
   },
 ];
 
-export {TrendingPodcasts, CelebrityFavourites, ForYou};
+export {TrendingPodcasts, CelebrityFavorites, ForYou};

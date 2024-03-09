@@ -1,5 +1,5 @@
 const Fonts = {
-  Regular: 'WorkSans-Regular',
+  Regular: 'WorkSans-Black',
   Medium: 'WorkSans-Medium',
   Bold: 'WorkSans-Bold',
   SemiBold: 'WorkSans-SemiBold',

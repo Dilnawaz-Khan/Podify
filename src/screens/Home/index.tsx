@@ -1,7 +1,8 @@
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
+
 import {
   COLORS,
-  CelebrityFavourites,
+  CelebrityFavorites,
   ForYou,
   TrendingPodcasts,
 } from '../../constants';
@@ -14,6 +15,7 @@ const Home = () => {
     <View style={styles.container}>
       <Header title="Podcasts" showRightIcon />
       <CategoryTab tabsArray={categoriesList} />
+
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.podCastsDataContainer}>
           <DataHorizontalList
@@ -21,8 +23,8 @@ const Home = () => {
             data={TrendingPodcasts}
           />
           <DataHorizontalList
-            headerTitle={'Celebrity Favourites'}
-            data={CelebrityFavourites}
+            headerTitle={'Celebrity Favorites'}
+            data={CelebrityFavorites}
           />
           <DataHorizontalList headerTitle={'For You'} data={ForYou} />
         </View>

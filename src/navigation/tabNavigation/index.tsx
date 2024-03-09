@@ -1,7 +1,8 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {COLORS, ScreenNames} from '../../constants';
-import {Bookmark, Home, Profile, Search, Upload} from '../../screens';
 import {Image, Platform} from 'react-native';
+
+import {Bookmark, Home, Profile, Search, Upload} from '../../screens';
+import {COLORS, ScreenNames} from '../../constants';
 import {Icons} from '../../assets/images/icons';
 
 const TabIcons = {
@@ -14,7 +15,7 @@ const TabIcons = {
 
 const Tab = createBottomTabNavigator();
 
-function TabNavigator() {
+function TabNavigation() {
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
@@ -34,11 +35,7 @@ function TabNavigator() {
           return (
             <Image
               source={TabIcons[name]}
-              style={{
-                width: 35,
-                height: 35,
-                tintColor: color,
-              }}
+              style={{width: 35, height: 35, tintColor: color}}
             />
           );
         },
@@ -52,4 +49,4 @@ function TabNavigator() {
   );
 }
 
-export {TabNavigator};
+export {TabNavigation};

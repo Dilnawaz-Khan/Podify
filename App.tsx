@@ -1,7 +1,7 @@
-import {SafeAreaView, StyleSheet, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import {RootNavigation} from './src/navigation';
-import {COLORS} from './src/constants';
-import StatusBar from './src/components/StatusBar';
+import {Fonts} from './src/constants';
+import {StatusBar} from './src/components';
 
 const App = () => {
   return (

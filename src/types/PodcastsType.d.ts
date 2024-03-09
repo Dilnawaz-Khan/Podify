@@ -1,7 +1,8 @@
+import {ImageProps} from 'react-native';
+
 interface PodcastItem {
   id: number;
   name: string;
-  poster: any;
+  poster: ImageProps;
 }
-
 export {PodcastItem};

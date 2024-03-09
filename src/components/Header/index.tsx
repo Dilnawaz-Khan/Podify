@@ -1,6 +1,7 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
-import {Icons} from '../../assets/images/icons';
+
 import {COLORS, Fonts} from '../../constants';
+import {Icons} from '../../assets/images/icons';
 
 interface HeaderProps {
   title: string;
@@ -28,8 +29,8 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 50,
     flexDirection: 'row',
-    justifyContent: 'center',
     alignItems: 'center',
+    justifyContent: 'center',
     paddingHorizontal: 10,
   },
   headingTxt: {
